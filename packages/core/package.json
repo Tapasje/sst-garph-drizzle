@@ -1,0 +1,24 @@
+{
+  "name": "@sst-garph-drizzle/core",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit",
+    "migrate": "drizzle-kit generate:pg",
+    "drop": "drizzle-kit drop"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@types/pg": "^8.10.2",
+    "drizzle-kit": "^0.19.1",
+    "sst": "2.24.10",
+    "vitest": "^0.32.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-rds-data": "^3.354.0",
+    "drizzle-orm": "^0.27.0",
+    "pg": "^8.11.0",
+    "zod": "^3.21.4"
+  }
+}

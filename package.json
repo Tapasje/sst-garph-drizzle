@@ -1,0 +1,22 @@
+{
+  "name": "sst-garph-drizzle",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "aws-cdk-lib": "2.91.0",
+    "constructs": "10.2.69",
+    "sst": "2.24.10",
+    "typescript": "^5.1.3"
+  }
+}
