@@ -2,12 +2,12 @@ import { StackContext, Api, use } from "sst/constructs";
 import { StorageStack } from "./StorageStack";
 
 export function ApiStack({ stack }: StackContext) {
-  const rds = use(StorageStack);
+  const { rds, bucket } = use(StorageStack);
 
   const api = new Api(stack, "Api", {
     defaults: {
       function: {
-        bind: [rds],
+        bind: [rds, bucket],
         environment: {
           STAGE: stack.stage,
         },
@@ -32,5 +32,5 @@ export function ApiStack({ stack }: StackContext) {
     ApiEndpoint: api.url,
   });
 
-  return api;
+  return { api };
 }

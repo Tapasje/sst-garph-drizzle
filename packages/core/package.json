@@ -12,7 +12,7 @@
     "@types/node": "^20.3.1",
     "@types/pg": "^8.10.2",
     "drizzle-kit": "^0.19.1",
-    "sst": "2.24.10",
+    "sst": "2.24.27",
     "vitest": "^0.32.2"
   },
   "dependencies": {
