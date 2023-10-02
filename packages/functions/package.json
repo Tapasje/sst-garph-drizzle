@@ -13,7 +13,9 @@
     "vitest": "^0.32.2"
   },
   "dependencies": {
+    "@trpc/server": "^10.38.5",
     "garph": "^0.5.7",
-    "graphql-yoga": "^4.0.1"
+    "graphql-yoga": "^4.0.1",
+    "zod": "^3.21.4"
   }
 }
